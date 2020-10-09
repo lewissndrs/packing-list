@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&family=Lato:wght@300;400&family=Playfair+Display:wght@700&display=swap');
+
+body{
+    font-size: 18px;
+}
+
+hgroup {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: auto;
+}
+
+form > label, form > input {
+    padding: 2px;
+    margin: 2px 0;
+}
+#submit {
+    grid-column-end: span 2;
+    place-self: center;
+    font-size: 20px;
+}
+
+#packing-list,#empty-message {
+    display: grid;
+    place-items: center;
+}
+
+button {
+    font-size: 20px;
+
+}
+
+#button-box {
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    font-family: 'Arima Madurai',cursive;
+    font-size: 3em;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h3,p,label {
+    font-family: 'Lato',sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.hide {
+    display: none !important; 
+}
+
+.list-item {
+    color: whitesmoke;
+    padding: 15px;
+    margin: 15px;
+    width: 30%;
+}
+
+.list-item > h3, .list-item >p {
+    margin-left: auto;
+}
+
+.bike {
+    background-color: firebrick;
+}
+
+.spare-tool {
+    background-color: forestgreen;
+}
+
+.clothing {
+    background-color: dodgerblue;
+}
+
+.cooking-food {
+    background-color: goldenrod;
+}
+
+.safety {
+    background-color: orangered;
+}
+
+.hygiene {
+    background-color: indigo;
+}

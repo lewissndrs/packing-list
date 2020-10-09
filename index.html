@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis' Adventure Packing List</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <hgroup>
+        <h1>Ready for an adventure?</h1>
+        <h2>Let's see what you need.</h2>
+    </hgroup>
+
+    <form action="" id="form">
+        <label for="item">Item: </label>
+        <input type="text" name="item" id="item">
+
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="quantity">
+
+        <label for="weight">Weight: </label>
+        <input type="number" id="weight">
+
+        <label for="category">Category: </label>
+        <select name="category" id="category">
+            <option value="" disabled selected>What best describes this item?</option>
+            <option value="bike">Bike</option>
+            <option value="spare-tool">Bike spares or tool</option>
+            <option value="clothing">Clothing</option>
+            <option value="safety">Safety</option>
+            <option value="cooking-food">Cooking/food</option>
+            <option value="hygiene">Hygiene</option>
+        </select>
+        <input type="submit" id="submit">
+    </form>
+    <div id='button-box'>
+        <button id='delete-all'>Clear List</button>
+    </div>
+
+    <h2 id='packing-list'>Packing list</h2>
+
+    <ul></ul>
+
+    <p id='empty-message'>You haven't packed anything yet</p>
+
+</body>
+</html>
