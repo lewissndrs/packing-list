@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded",() => {
         weight.textContent = `${event.target.weight.value}g each`;
 
         const category = document.createElement('p');
-        category.textContent= event.target.category.value;
+        category.textContent= event.target.category.value.replace(/-/g, '/');
         // append the elements to the parents
         
         listChild.appendChild(item);
